@@ -1,0 +1,109 @@
+body {
+    background-image: url('background.jpg'); /* Ensure this path is correct */
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#game-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 2em;
+    border-radius: 15px; /* Rounded corners for a friendly look */
+    background: rgba(255, 255, 255, 0.95); /* Slightly opaque white background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align items */
+    text-align: center; /* Center text inside the container */
+}
+
+h1 {
+    color: #ff6347; /* Tomato color */
+    font-size: 2.5em; /* Larger heading for emphasis */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+input[type="number"] {
+    width: 70%; /* Make the input box prominent */
+    max-width: 250px; /* Maximum width for the input box */
+    padding: 12px;
+    font-size: 1em;
+    border: 2px solid #ff6347; /* Tomato color */
+    border-radius: 10px; /* Rounded corners */
+    margin: 10px 0; /* Margin for spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+input[type="submit"] {
+    padding: 12px 24px; /* Larger padding for a more prominent button */
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #ff6347; /* Tomato color */
+    border: none;
+    color: white;
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 20px; /* Ensure button has spacing from elements above */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+input[type="submit"]:hover {
+    background-color: #e53e3e; /* Darker tomato color */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+#hint {
+    font-size: 1.1em; /* Slightly larger font size for better readability */
+    font-style: italic; /* Italicize hint */
+    color: #32cd32; /* Lime green for hint text */
+    margin-top: 20px; /* Space between hint and other elements */
+}
+
+#feedback {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ff6347; /* Tomato color for feedback */
+}
+
+#score-display {
+    font-size: 1.5em; /* Larger font size for score display */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff6347; /* Tomato color for score */
+}
+
+#start-section, #game {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+#game-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensure full width for better alignment */
+}
+
+#game-controls input[type="submit"] {
+    margin-top: 20px; /* Add margin to separate from the hint */
+}
+
+#game-controls #hint {
+    margin-top: 20px; /* Add margin to separate from the button */
+}

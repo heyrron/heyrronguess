@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <link rel="stylesheet" href="guess_num.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Guess the Number Game</h1>
+        <p id="instructions">Welcome! Let's play a fun guessing game. Can you guess the number?</p>
+        
+        <div id="start-section">
+            <label for="name">Enter your name: </label>
+            <input type="text" id="name" placeholder="Your name">
+            <button id="start-game">Start Game</button>
+        </div>
+        
+        <div id="game" style="display:none;">
+            <div id="score-display">Score: 0</div>
+            <p id="difficulty-text">Select Difficulty:</p>
+            <select id="difficulty">
+                <option value="easy">Easy (1-10)</option>
+                <option value="medium">Medium (1-20)</option>
+                <option value="hard">Hard (1-50)</option>
+            </select>
+            <button id="play-game">Play Game</button>
+            <div id="guess-section" style="display:none;">
+                <input type="number" id="guess" placeholder="Your guess" />
+                <button id="submit-guess">Submit Guess</button>
+                <p id="hint" style="font-size: 0.8em; font-style: italic;"></p>
+                <p id="feedback"></p>
+            </div>
+            <button id="play-again" style="display:none;">Play Again</button>
+            <button id="next-round" style="display:none;">Next Round</button>
+        </div>
+    </div>
+
+    <audio id="correct-sound" src="correct.mp3"></audio>
+    <audio id="wrong-sound" src="wrong.mp3"></audio>
+    <script src="guess_num.js"></script>
+</body>
+</html>
